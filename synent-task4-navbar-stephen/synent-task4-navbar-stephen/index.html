@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Navigation Bar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">Brand<span>Name</span></a>
+
+      <button id="menuBtn" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="menu" class="menu" aria-label="Main">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="block">
+      <h1>Home</h1>
+      <p>Resize the browser window to see the hamburger menu appear on small screens.</p>
+    </section>
+    <section id="about" class="block alt">
+      <h2>About</h2>
+      <p>This page shows a responsive navigation bar with a logo, menu links and a mobile toggle.</p>
+    </section>
+    <section id="services" class="block">
+      <h2>Services</h2>
+      <p>Click a link and the page scrolls to the right section. On mobile the menu closes by itself.</p>
+    </section>
+    <section id="contact" class="block alt">
+      <h2>Contact</h2>
+      <p>Built with HTML, CSS and a small JavaScript toggle.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
